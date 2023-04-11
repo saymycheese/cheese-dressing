@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image slideshow</title>
+</head>
+<body>
+  <img id="image" src="" alt="Slideshow image">
+  
+  <script>
+    // JavaScript code goes here
+    // Array of image URLs
+    var images = [
+        "assets/images/outfits/top/top1.png",
+        "assets/images/outfits/top/top2.png",
+        "assets/images/outfits/top/top3.png",
+        "assets/images/outfits/top/top4.png",
+        "assets/images/outfits/top/top5.png",
+        "assets/images/outfits/top/top6.png"
+    ];
+
+    // Randomize the order of the images array on each page refresh
+    images.sort(() => Math.random() - 0.5);
+
+    // Index of the current image being displayed
+    var currentIndex = 0;
+
+    // Function to change the image at a 0.2-second interval
+    var intervalId = setInterval(() => {
+      // Get the next image URL
+      var nextImage = images[currentIndex];
+      // Set the image source to the next image URL
+      document.getElementById("image").src = nextImage;
+      // Increment the currentIndex
+      currentIndex++;
+      // If currentIndex is equal to the length of the images array, reset it to 0
+      if (currentIndex === images.length) {
+        currentIndex = 0;
+      }
+    }, 200);
+
+    // Stop changing the image after 3 seconds
+    setTimeout(() => {
+      clearInterval(intervalId);
+    }, 3000);
+  </script>
+</body>
+</html>
