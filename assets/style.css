@@ -111,6 +111,7 @@ button{
         scroll-snap-type: x mandatory;
         scrollbar-width: none;
         overflow-y: hidden;
+        width: 100vw;
     }
         
     .horizontal-scroll::-webkit-scrollbar {
@@ -154,5 +155,9 @@ button{
         padding: 10px;
         border:#FF66AF;
         border-radius: 10px;
+    }
+
+    .picker{
+        display: none;
     }
 }
