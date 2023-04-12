@@ -5,7 +5,10 @@
   }
 
 body{
-    background-image: url(images/mobile-background.png);
+    background-image: url(images/image\ 87.png);
+    height: 100vh;
+    background-size: cover;
+    padding: 20px;
 }
 
 h1{
@@ -23,9 +26,8 @@ h1{
     0 0 102px #6AFFE4,
     0 0 151px rgba(0, 255, 170, 0.414);
     font-size: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
-
 
 .horizontal-scroll {
     display: flex;
@@ -35,6 +37,7 @@ h1{
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     overflow-y: hidden;
+    width: 60vw;
 }
     
 .horizontal-scroll::-webkit-scrollbar {
@@ -57,11 +60,6 @@ h1{
     height: 130px;
 }
 
-#shoes{
-    padding-bottom: 15px;
-    transform: scale(80%);
-}
-
 .btn{
     align-items: center;
     display: flex;
@@ -77,6 +75,84 @@ button{
     font-size: 22px;
     padding: 10px;
     border:#FF66AF;
-    border-radius: 10px;
+}
+.picker{
+    position: absolute;
+    right:150px;
+    top: 180px;
+}
+.clothes {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    border: 1px solid #FF66AF;
+    background-color: #ffffff;
+  }
+
+.shoes{
+    width: 180px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #FF66AF;
+    background-color: #ffffff;
 }
 
+@media (max-width: 768px) {
+    body{
+        background-image: url(images/mobile-background.png);
+        
+    }
+
+    .horizontal-scroll {
+        display: flex;
+        gap: 5px;
+        height: 190px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        overflow-y: hidden;
+    }
+        
+    .horizontal-scroll::-webkit-scrollbar {
+        display: none;
+    }
+        
+    .horizontal-scroll__item {
+        align-items: center;
+        /* background-color: red; */
+        color: white;
+        /* border: 1px solid black; */
+        display: flex;
+        flex: 0 0 180px;
+        font-size: 40px;
+        justify-content: center;
+        scroll-snap-align: center;
+        }
+
+    #shoes .horizontal-scroll{
+        height: 130px;
+    }
+
+    #shoes{
+        padding-bottom: 15px;
+        transform: scale(80%);
+    }
+
+    .btn{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    button{
+        background-color: #FF66AF;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        color:#ffffff;
+        font-size: 22px;
+        padding: 10px;
+        border:#FF66AF;
+        border-radius: 10px;
+    }
+}

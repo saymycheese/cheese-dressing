@@ -6,89 +6,96 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
-		<script defer src="assets/main.js"></script>
+		<script defer src="assets/test2.js"></script>
 		<!-- <script defer src="assets/form-state.js"></script> -->
 	</head>
 	<body>
         <h1>Cheese<br>Outfit</h1>
 
-        <section id="top">
-            <div class="horizontal-scroll">
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top1.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top2.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top3.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top4.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top5.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top6.png"></div>
-                <!-- <div class="horizontal-scroll__item">7</div>
-                <div class="horizontal-scroll__item">8</div>
-                <div class="horizontal-scroll__item">9</div>
-                <div class="horizontal-scroll__item">10</div>
-                <div class="horizontal-scroll__item">11</div>
-                <div class="horizontal-scroll__item">12</div>
-                <div class="horizontal-scroll__item">13</div>
-                <div class="horizontal-scroll__item">14</div>
-                <div class="horizontal-scroll__item">15</div>
-                <div class="horizontal-scroll__item">16</div>
-                <div class="horizontal-scroll__item">17</div>
-                <div class="horizontal-scroll__item">18</div>
-                <div class="horizontal-scroll__item">19</div>
-                <div class="horizontal-scroll__item">20</div> -->
-              </div>
-        </section>
+        <div class="container">
+            <section id="top">
+                <div class="horizontal-scroll">
+                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="topdrag1" src="assets/images/outfits/top/top1.png" draggable="true" ondragstart="dragStart(event)"></div>
+                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="topdrag2" src="assets/images/outfits/top/top2.png" draggable="true" ondragstart="dragStart(event)"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top3.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top4.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top5.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top6.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top7.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top8.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top9.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top10.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top11.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/top/top12.png"></div>
+                    <div class="horizontal-scroll__item"></div>
+                </div>
+            </section>
 
-        <section id="bottom">
-            <div class="horizontal-scroll">
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom1.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom2.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom3.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom4.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom5.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom6.png"></div>
-                <!-- <div class="horizontal-scroll__item">7</div>
-                <div class="horizontal-scroll__item">8</div>
-                <div class="horizontal-scroll__item">9</div>
-                <div class="horizontal-scroll__item">10</div>
-                <div class="horizontal-scroll__item">11</div>
-                <div class="horizontal-scroll__item">12</div>
-                <div class="horizontal-scroll__item">13</div>
-                <div class="horizontal-scroll__item">14</div>
-                <div class="horizontal-scroll__item">15</div>
-                <div class="horizontal-scroll__item">16</div>
-                <div class="horizontal-scroll__item">17</div>
-                <div class="horizontal-scroll__item">18</div>
-                <div class="horizontal-scroll__item">19</div>
-                <div class="horizontal-scroll__item">20</div> -->
-              </div>
-        </section>
+            <section id="bottom">
+                <div class="draggable horizontal-scroll">
+                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="bottomdrag1" src="assets/images/outfits/bottom/bottom1.png" draggable="true" ondragstart="dragStart(event)"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom2.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom3.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom4.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom5.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom6.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom7.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom8.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom9.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom10.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom11.png"></div>
+                    <div class="horizontal-scroll__item"></div>
 
-        <section id="shoes">
-            <div class="horizontal-scroll">
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes1.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes2.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes3.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes4.png"></div>
-                <!-- <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom5.png"></div>
-                <div class="horizontal-scroll__item"><img src="assets/images/outfits/bottom/bottom6.png"></div> -->
-                <!-- <div class="horizontal-scroll__item">7</div>
-                <div class="horizontal-scroll__item">8</div>
-                <div class="horizontal-scroll__item">9</div>
-                <div class="horizontal-scroll__item">10</div>
-                <div class="horizontal-scroll__item">11</div>
-                <div class="horizontal-scroll__item">12</div>
-                <div class="horizontal-scroll__item">13</div>
-                <div class="horizontal-scroll__item">14</div>
-                <div class="horizontal-scroll__item">15</div>
-                <div class="horizontal-scroll__item">16</div>
-                <div class="horizontal-scroll__item">17</div>
-                <div class="horizontal-scroll__item">18</div>
-                <div class="horizontal-scroll__item">19</div>
-                <div class="horizontal-scroll__item">20</div> -->
-              </div>
-        </section>
+                </div>
+            </section>
 
-    <div class="btn">
+            <section id="shoes">
+                <div class="draggable horizontal-scroll" draggable="true">
+                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="shoedrag1" src="assets/images/outfits/shoes/shoes1.png" draggable="true" ondragstart="dragStart(event)"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes2.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes3.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes4.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes5.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes6.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes7.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes8.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes9.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes10.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes11.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes12.png"></div>
+                    <div class="horizontal-scroll__item"><img src="assets/images/outfits/shoes/shoes13.png"></div>
+                    <div class="horizontal-scroll__item"></div>
+                </div>
+            </section>
+
+
+    <!-- <div class="btn">
         <button><a href="test.html">Let's find something to wear!</a></button>
+    </div> -->
+
+    <script>
+        function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function dragStart(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function dragDrop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+
+    <div class="picker">
+        <div class="clothes" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+        <div class="clothes" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+        <div class="shoes" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
     </div>
+
+</div>
+
 	</body>
 </html>
