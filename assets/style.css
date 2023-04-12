@@ -47,14 +47,18 @@ h1{
 .horizontal-scroll__item {
       align-items: center;
       /* background-color: red; */
-      color: white;
+      color: #FF66AF;
       /* border: 1px solid black; */
       display: flex;
       flex: 0 0 180px;
-      font-size: 40px;
+      font-size: 30px;
       justify-content: center;
       scroll-snap-align: center;
     }
+
+#bottom .horizontal-scroll{
+    height: 230px;
+}
 
 #shoes .horizontal-scroll{
     height: 130px;
@@ -87,6 +91,8 @@ button{
     padding: 10px;
     border: 1px solid #FF66AF;
     background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
   }
 
 .shoes{
@@ -100,7 +106,10 @@ button{
 @media (max-width: 768px) {
     body{
         background-image: url(images/mobile-background.png);
-        
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        padding: 0px;
     }
 
     .horizontal-scroll {
@@ -117,27 +126,27 @@ button{
     .horizontal-scroll::-webkit-scrollbar {
         display: none;
     }
+
+    .mobile {
+        margin-left: -22vw;
+    }
+
+    .first{
+        display: none;
+    }
         
     .horizontal-scroll__item {
         align-items: center;
         /* background-color: red; */
-        color: white;
+        color: #FF66AF;
         /* border: 1px solid black; */
         display: flex;
         flex: 0 0 180px;
-        font-size: 40px;
+        font-size: 20px;
         justify-content: center;
         scroll-snap-align: center;
         }
 
-    #shoes .horizontal-scroll{
-        height: 130px;
-    }
-
-    #shoes{
-        padding-bottom: 15px;
-        transform: scale(80%);
-    }
 
     .btn{
         align-items: center;
