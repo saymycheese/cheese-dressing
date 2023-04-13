@@ -1,23 +1,37 @@
+<!doctype html>
 <html>
 	<head>
-		<title>Random Picture Generator</title>
-		<link rel="stylesheet" href="test.css">
-        <script defer src="test.js"></script>
+		<title>Chi's Closet</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="assets/reset.css" rel="stylesheet">
+		<link href="assets/style.css" rel="stylesheet">
+		<script defer src="test.js"></script>
+		<!-- <script defer src="assets/form-state.js"></script> -->
 	</head>
 	<body>
-		<header class="flex">
-			<h1>Random Outfit Generator</h1>
-			<button class="button-top">Generate Random Top</button>
-		</header>
-		<!-- <section class="flex">
-			<img class="img-top" src="">
-		</section> -->
+        <h1>Cheese<br>Outfit</h1>
 
-        <header class="flex">
-            <button class="button-bottom">Generate Random Bottom</button>
-        </header>
-        <section class="flex">
-			<img class="img-bottom" src="">
-		</section>
+        <section id="top">
+            <ul class="horizontal-scroll" id="topList"></ul>
+          </section>
+          
+
+          <section id="bottom">
+            <ul class="horizontal-scroll" id="bottomList"></ul>
+          </section>
+
+    <!-- <div class="btn">
+        <button><a href="test.html">Let's find something to wear!</a></button>
+    </div> -->
+    <div class="btn">
+        <button onclick="generateTop()">Random top</button>
+    </div>
+    <div class="btn">
+      <button onclick="generateBottom()">Random bottom</button>
+  </div>
+  <div class="btn">
+    <button onclick="generateAll()">Random All</button>
+</div>
 	</body>
 </html>

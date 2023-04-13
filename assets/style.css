@@ -3,16 +3,40 @@
     font-family: 'Cybercrime';
     src: url(fonts/Cybercrime2004Regular-jnz0.ttf);
   }
+@font-face {
+    font-family: 'Barbie';
+    src: url(fonts/barbie.ttf);
+}
+@font-face {
+    font-family: 'Ageta';
+    src: url(fonts/AgetaChubbyDemo-O7L6.ttf);
+}
+
 
 body{
-    background-image: url(images/image\ 87.png);
+    background-image: url(images/hot-balloon.png);
     height: 100vh;
     background-size: cover;
     padding: 20px;
 }
 
+ul{
+    list-style-type: none;
+}
+
+#logo{
+    transform: scale(30%);
+    position: absolute;
+    margin-left: -15vw;
+    margin-top: -12vw;
+}
+
+.container{
+    margin-top: 12vw;
+}
+
 h1{
-    font-family: 'Cybercrime';
+    font-family: 'Ageta';
     color: #FF66AF;
     text-shadow:
     /* White glow */
@@ -20,14 +44,18 @@ h1{
     0 0 10px #ffffff,
     0 0 21px #ffffff,
     /* Green glow */
-    0 0 42px rgba(0, 255, 170, 0.414),
-    0 0 82px rgba(0, 255, 170, 0.414),
+    0 0 42px rgba(187, 0, 255, 0.414),
+    0 0 82px rgba(255, 0, 234, 0.414),
     0 0 92px #6AFFE4,
     0 0 102px #6AFFE4,
-    0 0 151px rgba(0, 255, 170, 0.414);
+    0 0 151px rgba(255, 0, 132, 0.414);
     font-size: 45px;
     margin-bottom: 30px;
 }
+
+/* .mobile{
+    margin-left: -10vw;
+} */
 
 .horizontal-scroll {
     display: flex;
@@ -37,7 +65,9 @@ h1{
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
     overflow-y: hidden;
-    width: 60vw;
+    width: 55vw;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
     
 .horizontal-scroll::-webkit-scrollbar {
@@ -55,6 +85,17 @@ h1{
       justify-content: center;
       scroll-snap-align: center;
     }
+
+    @keyframes slidein {
+        from {
+          margin-left: 200%;
+          width: 300%;
+        }
+        to {
+          margin-left: 0%;
+          /* width: 100%; */
+        }
+      }
 
 #bottom .horizontal-scroll{
     height: 230px;
@@ -83,8 +124,9 @@ button{
 .picker{
     position: absolute;
     right:150px;
-    top: 110px;
-    font-size: 16px;
+    top: 130px;
+    font-size: 20px;
+    font-family: 'Barbie';
 }
 .top {
     width: 180px;
@@ -114,13 +156,24 @@ justify-content: center;
     background-color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body{
-        background-image: url(images/mobile-background.png);
+        /* background-image: url(images/dall-e-1.png); */
         height: 100vh;
         width: 100vw;
         background-size: cover;
         padding: 0px;
+    }
+
+    #logo{
+        transform: scale(30%);
+        position: absolute;
+        margin-left: -57vw;
+        margin-top: -85vw;
+    }
+    
+    .container{
+        margin-top: 43vw;
     }
 
     .horizontal-scroll {
