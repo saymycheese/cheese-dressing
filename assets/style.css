@@ -24,15 +24,13 @@ ul{
     list-style-type: none;
 }
 
-#logo{
-    transform: scale(30%);
-    position: absolute;
-    margin-left: -225px;
-    margin-top: -180px;
+.logo img{
+    width: 200px;
+    height: auto;
 }
 
 .container{
-    margin-top: 175px;
+    margin-top: 15px;
 }
 
 /* h1{
@@ -183,15 +181,17 @@ button{
         padding: 0px;
     }
 
-    #logo{
-        transform: scale(30%);
-        position: absolute;
-        margin-left: -215px;
-        margin-top: -345px;
+    .logo{
+        margin-left: 10px;
+    }
+
+    .logo img{
+        width: 170px;
+        height: auto;
     }
     
     .container{
-        margin-top: 185px;
+        margin-top: 15px;
     }
 
     .horizontal-scroll {
