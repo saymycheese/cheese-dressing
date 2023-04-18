@@ -64,13 +64,22 @@ ul{
     scrollbar-width: none;
     overflow-y: hidden;
     width: 55vw;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
 }
-    
+
 .horizontal-scroll::-webkit-scrollbar {
-    display: none;
-}
+    background-color: transparent;
+    height: 7px;
+  }
+
+  .horizontal-scroll:hover {
+    &::-webkit-scrollbar-thumb {
+      background-color: palevioletred ;
+      border-radius: 10px;
+      height: 5px;
+    }
+  }
     
 .horizontal-scroll__item {
       align-items: center;
@@ -84,16 +93,42 @@ ul{
       scroll-snap-align: center;
     }
 
-    @keyframes slidein {
-        from {
-          margin-left: 200%;
-          width: 300%;
-        }
-        to {
-          margin-left: 0%;
-          /* width: 100%; */
-        }
-      }
+img{
+    transition: transform .2s;
+}
+
+img:hover{
+    transform: scale(1.1); 
+}
+
+#top{
+    animation: shake 3.5s ease-in-out;
+}
+
+#bottom{
+    animation: shake 4.5s ease-in-out;
+}
+
+#shoes{
+    animation: shake 5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    30%, 50%, 70% {transform: translateX(-5px);}
+    20%, 40%, 80% {transform: translateX(30px);}
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 200%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        /* width: 100%; */
+    }
+    }
 
 #bottom .horizontal-scroll{
     height: 230px;
@@ -122,15 +157,14 @@ button{
 .picker{
     position: absolute;
     right: 5vw;
-    top: 130px;
+    top: 100px;
 }
 
 .copy {
     width: 190px;
     font-size: 22px;
     font-family: 'Barbie';
-    border-style: solid;
-    background-color: #FF66AF;
+    color: #FF66AF;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
@@ -153,7 +187,10 @@ button{
     padding: 10px;
     border: 1px solid #FF66AF;
     background-color: #ffffff;
-  }
+    box-shadow:
+    0 0 10px #ffffff,
+    0 0 21px #9ecaed;
+}
 
 .bottom {
     width: 180px;
@@ -161,6 +198,9 @@ button{
     padding: 10px;
     border: 1px solid #FF66AF;
     background-color: #ffffff;
+    box-shadow:
+    0 0 10px #ffffff,
+    0 0 21px #9ecaed;
     }
 
 .shoes{
@@ -169,6 +209,9 @@ button{
     padding: 10px;
     border: 1px solid #FF66AF;
     background-color: #ffffff;
+    box-shadow:
+    0 0 10px #ffffff,
+    0 0 21px #9ecaed;
 }
 
 @media (max-width: 767px) {
@@ -192,6 +235,7 @@ button{
     
     .container{
         margin-top: 15px;
+        margin-left: -8px;
     }
 
     .horizontal-scroll {
@@ -201,6 +245,7 @@ button{
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scrollbar-width: none;
+        visibility: visible;
         overflow-y: hidden;
         width: 100vw;
     }
