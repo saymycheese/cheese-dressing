@@ -125,28 +125,45 @@ button{
     position: absolute;
     right: 5vw;
     top: 130px;
-    font-size: 20px;
-    font-family: 'Barbie';
 }
+
+.copy {
+    width: 190px;
+    font-size: 22px;
+    font-family: 'Barbie';
+    border-style: solid;
+    background-color: #FF66AF;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow:
+    /* White glow */
+    0 0 7px #ffffff,
+    0 0 10px #ffffff,
+    0 0 21px #ffffff,
+    /* Green glow */
+    0 0 42px rgba(187, 0, 255, 0.414),
+    0 0 82px rgba(255, 0, 234, 0.414),
+    0 0 92px #6AFFE4,
+    0 0 102px #6AFFE4,
+    0 0 151px rgba(255, 0, 132, 0.414);
+}
+
 .top {
     width: 180px;
     height: 195px;
     padding: 10px;
     border: 1px solid #FF66AF;
     background-color: #ffffff;
-    align-items: center;
-    justify-content: center;
   }
 
 .bottom {
-width: 180px;
-height: 200px;
-padding: 10px;
-border: 1px solid #FF66AF;
-background-color: #ffffff;
-align-items: center;
-justify-content: center;
-}
+    width: 180px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #FF66AF;
+    background-color: #ffffff;
+    }
 
 .shoes{
     width: 180px;
