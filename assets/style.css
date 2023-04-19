@@ -93,6 +93,10 @@ ul{
       scroll-snap-align: center;
     }
 
+.end-cart{
+    width: 100px;
+}
+
 img{
     transition: transform .2s;
 }
@@ -147,17 +151,34 @@ img:hover{
 
 button{
     background-color: #FF66AF;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Barbie';
     text-align: center;
     color:#ffffff;
     font-size: 22px;
-    padding: 10px;
+    padding: 15px;
     border:#FF66AF;
+    border-radius: 10px;
 }
+
+button:hover{
+    cursor: pointer;
+    color:aqua;
+}
+
+.reset{
+    position: absolute;
+    right: 35vw;
+    top: 670px;
+}
+
 .picker{
     position: absolute;
     right: 10vw;
     top: 100px;
+}
+
+.randomizer{
+    display: none;
 }
 
 .copy {
@@ -214,7 +235,7 @@ button{
     0 0 21px #9ecaed;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
     body{
         /* background-image: url(images/dall-e-1.png); */
         height: 100vh;
@@ -253,15 +274,22 @@ button{
     }
 
     #top{
-        animation: none;
+        /* animation: none; */
+        animation-duration: 2.3s;
+        animation-name: slidein;
     }
     
     #bottom{
-        animation: shake 3.3s ease-in-out;
+        /* animation: shake 3.3s ease-in-out; */
+        /* animation: none; */
+        animation-duration: 2.6s;
+        animation-name: slidein;
     }
     
     #shoes{
-        animation: none;
+        /* animation: none; */
+        animation-duration: 2.9s;
+        animation-name: slidein;
     }
 
         
@@ -297,6 +325,17 @@ button{
 
     }
 
+    .reset{
+        display: none;
+    }
+
+    .randomizer{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 15px;
+    }
+
     button{
         background-color: #FF66AF;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -305,7 +344,7 @@ button{
         font-size: 22px;
         padding: 10px;
         border:#FF66AF;
-        border-radius: 10px;
+        border-radius: 50%;
     }
 
     .picker{

@@ -31,8 +31,7 @@
                     <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="topdrag10" src="assets/images/outfits/top/top10.png" draggable="true" ondragstart="dragStart(event)"></div>
                     <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="topdrag11" src="assets/images/outfits/top/top11.png" draggable="true" ondragstart="dragStart(event)"></div>
                     <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="topdrag12" src="assets/images/outfits/top/top12.png" draggable="true" ondragstart="dragStart(event)"></div>
-
-                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><div class="end-card"></div></div>
                     <div class="cover-bar"></div>
                 </div>
             </section>
@@ -51,7 +50,7 @@
                     <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="bottomdrag9" src="assets/images/outfits/bottom/bottom9.png" draggable="true" ondragstart="dragStart(event)"></div>
                     <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="bottomdrag10" src="assets/images/outfits/bottom/bottom10.png" draggable="true" ondragstart="dragStart(event)"></div>
                     <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="bottomdrag11" src="assets/images/outfits/bottom/bottom11.png" draggable="true" ondragstart="dragStart(event)"></div>
-                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><div class="end-card"></div></div>
 
                 </div>
             </section>
@@ -72,7 +71,7 @@
                     <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="shoedrag11" src="assets/images/outfits/shoes/shoes11.png" draggable="true" ondragstart="dragStart(event)"></div>
                     <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="shoedrag12" src="assets/images/outfits/shoes/shoes12.png" draggable="true" ondragstart="dragStart(event)"></div>
                     <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><img id="shoedrag13" src="assets/images/outfits/shoes/shoes13.png" draggable="true" ondragstart="dragStart(event)"></div>
-                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+                    <div class="draggable horizontal-scroll__item" ondrop="dragDrop(event)" ondragover="allowDrop(event)"><div class="end-card"></div></div>
                 </div>
             </section>
 
@@ -89,7 +88,16 @@
         <div class="bottom" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
         <div class="shoes" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
     </div>
-</div>
+        </div>
 
+        <div class="reset">
+            <button onclick="location.reload();">Reset</button>
+        </div>
+
+        <div class="randomizer">
+            <button class="btn" onclick="location.reload();">
+                <img src="assets/images/random.svg">
+            </button>
+        </div>
 	</body>
 </html>
