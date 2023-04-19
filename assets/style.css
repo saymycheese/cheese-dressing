@@ -247,20 +247,21 @@ button{
         scrollbar-width: none;
         visibility: visible;
         overflow-y: hidden;
-        animation-duration: 1s;
+        animation-duration: 2s;
+        animation-name: slidein;
         width: 100vw;
     }
 
     #top{
-        animation: shake 1.1s ease-in-out;
+        animation: none;
     }
     
     #bottom{
-        animation: shake 1.8s ease-in-out;
+        animation: shake 3.3s ease-in-out;
     }
     
     #shoes{
-        animation: shake 2.3s ease-in-out;
+        animation: none;
     }
 
         
