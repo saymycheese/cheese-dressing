@@ -152,7 +152,7 @@ button:hover{
 .picker{
     position: absolute;
     right: 10vw;
-    top: 100px;
+    top: 70px;
 }
 
 .randomizer{
@@ -161,7 +161,7 @@ button:hover{
 
 .copy {
     width: 190px;
-    font-size: 22px;
+    font-size: 24px;
     font-family: 'Barbie';
     color: #FF66AF;
     padding: 5px;
@@ -181,7 +181,7 @@ button:hover{
 }
 
 .top {
-    width: 180px;
+    width: 165px;
     height: 195px;
     padding: 10px;
     border: 1px solid #FF66AF;
@@ -192,7 +192,7 @@ button:hover{
 }
 
 .bottom {
-    width: 180px;
+    width: 165px;
     height: 200px;
     padding: 10px;
     border: 1px solid #FF66AF;
@@ -203,8 +203,8 @@ button:hover{
     }
 
 .shoes{
-    width: 180px;
-    height: 100px;
+    width: 165px;
+    height: 105px;
     padding: 10px;
     border: 1px solid #FF66AF;
     background-color: #ffffff;
