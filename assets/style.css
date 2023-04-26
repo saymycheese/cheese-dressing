@@ -15,9 +15,10 @@
 
 body{
     background-image: url(images/hot-balloon.png);
-    height: 100vh;
+    height: 95vh;
     background-size: cover;
     padding: 20px;
+
 }
 
 ul{
@@ -155,18 +156,22 @@ button:hover{
     top: 70px;
 }
 
+/* .picker img{
+    max-height:100%;
+} */
+
 .randomizer{
     display: none;
 }
 
 .copy {
-    width: 190px;
-    font-size: 24px;
+    width: 360px;
+    font-size: 20px;
     font-family: 'Barbie';
     color: #FF66AF;
     padding: 5px;
     border-radius: 10px;
-    text-align: center;
+    text-align: right;
     text-shadow:
     /* White glow */
     0 0 7px #ffffff,
@@ -180,6 +185,11 @@ button:hover{
     0 0 151px rgba(255, 0, 132, 0.414);
 }
 
+.booth{
+    position:absolute;
+    right:0;
+}
+
 .top {
     width: 165px;
     height: 195px;
@@ -189,6 +199,8 @@ button:hover{
     box-shadow:
     0 0 10px #ffffff,
     0 0 21px #9ecaed;
+    display:flex;
+    justify-content: center;
 }
 
 .bottom {
@@ -200,6 +212,8 @@ button:hover{
     box-shadow:
     0 0 10px #ffffff,
     0 0 21px #9ecaed;
+    display:flex;
+    justify-content: center;
     }
 
 .shoes{
@@ -211,6 +225,8 @@ button:hover{
     box-shadow:
     0 0 10px #ffffff,
     0 0 21px #9ecaed;
+    display:flex;
+    justify-content: center;
 }
 
 @media (max-width: 1000px) {
