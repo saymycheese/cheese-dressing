@@ -13,6 +13,7 @@ body{
   padding: 10px;
   height: 100vh;
   width: 100vw;
+  cursor:url(/assets/Cute\ Pink\ Normal\ Select.cur), auto;
 }
 
 .scrolling-image-container {
@@ -82,7 +83,9 @@ button{
     display: inline-block;
     font-size: 25px;
     margin: 4px 2px;
-    cursor: pointer;
+}
+button:hover { 
+  cursor: url(/assets/Hover_linkselect.cur), auto;
 }
 
 .start{
@@ -96,6 +99,7 @@ a{
 
 a:hover{
     color: aqua;
+    cursor: url(/assets/Hover_linkselect.cur), auto;
 }
 
 
