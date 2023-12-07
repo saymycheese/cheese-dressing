@@ -18,7 +18,7 @@ body{
     height: 95vh;
     background-size: cover;
     padding: 20px;
-    cursor:url(/assets/Cute\ Pink\ Normal\ Select.cur), auto;
+    cursor:url(Cute\ Pink\ Normal\ Select.cur), auto;
 
 }
 
@@ -141,12 +141,12 @@ button{
 }
 
 button:hover{
-    cursor: url(/assets/Hover_linkselect.cur), auto;
+    cursor: url(Hover_linkselect.cur), auto;
     color:aqua;
 }
 
 a:hover{
-    cursor: url(/assets/Hover_linkselect.cur), auto;
+    cursor: url(Hover_linkselect.cur), auto;
 }
 
 .reset{
